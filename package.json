@@ -1,0 +1,25 @@
+{
+  "name": "@signalnode/types",
+  "version": "0.1.0",
+  "description": "Types for SignalNode",
+  "types": "dist/index.d.ts",
+  "author": "Dawosch",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/signalnode/types"
+  },
+  "keywords": [
+    "typescript",
+    "signalnode",
+    "nodejs"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "prepublishOnly": "tsc -p ."
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {}
+}
