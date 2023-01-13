@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Types for SignalNode",
   "types": "dist/index.d.ts",
+  "main": "",
   "author": "Dawosch",
   "license": "MIT",
   "repository": {

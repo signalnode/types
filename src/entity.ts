@@ -1,8 +1,11 @@
-export type SignalNodeEntity<E> = {
+export type SignalNodeEntity<C, E> = {
   name: E;
   description: string;
-  value: string | number;
+  value: string | number | boolean;
+  history?: { value: string | number | boolean; timestamp: number }[];
   unit?: string;
-  interval?: [string, string, string, string, string, string?];
-  job?: ((config: any) => any) | ((config: any) => Promise<any>);
+  job?: {
+    interval: [string, string, string, string, string, string?];
+    run: (config: C) => Promise<any>;
+  };
 };
