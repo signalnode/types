@@ -9,5 +9,5 @@ export type SignalNodeProperty<C, P> = {
   type: PropertyType;
   useHistory?: boolean;
   //   history?: { value: string | number | boolean; timestamp: number }[];
-  task?: SignalNodePropertyTask<C>;
+//   task?: SignalNodePropertyTask<C>;
 };
