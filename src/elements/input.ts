@@ -1,5 +1,5 @@
 export type InputElement<T> = {
-  type: 'input';
+  type: 'text' | 'password';
   label: string;
   name: keyof T;
   value?: string | boolean;
